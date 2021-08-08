@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Expense Manager</string>
+    <string name="item_image">ItemImage</string>
+    <string name="item_text">Income</string>
+    <string name="item_category">Healthcare</string>
+    <string name="item_amount">$ 200</string>
 </resources>
