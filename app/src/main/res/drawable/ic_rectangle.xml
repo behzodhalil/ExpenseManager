@@ -1,4 +1,5 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:width="20dp"
     android:height="16dp"
     android:viewportWidth="156"
@@ -12,5 +13,6 @@
       android:pathData="M0.5,0.5h155v35h-155z"
       android:strokeWidth="1"
       android:fillColor="@color/purple_200"
-      android:strokeColor="@color/white"/>
+      android:strokeColor="#00000000"
+      tools:ignore="VectorRaster" />
 </vector>
