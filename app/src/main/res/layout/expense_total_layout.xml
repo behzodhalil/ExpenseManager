@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="145dp"
+    android:layout_margin="@dimen/dimen_8">
+
+    <TextView
+        android:id="@+id/total_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="@font/rubik"
+        android:text="Total Expense"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/total_income"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginRight="292dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="@font/rubik"
+        android:text="Total Income"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

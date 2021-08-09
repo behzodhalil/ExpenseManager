@@ -10,11 +10,14 @@
     android:layout_marginBottom="@dimen/dimen_8"
     app:cardCornerRadius="@dimen/dimen_4"
     app:cardElevation="@dimen/dimen_8"
+
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/item_constraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
 
         <ImageView
             android:id="@+id/item_icon"
@@ -43,7 +46,9 @@
             app:layout_constraintBottom_toBottomOf="@id/item_constraint"
             app:layout_constraintLeft_toRightOf="@id/item_icon"
             app:layout_constraintTop_toTopOf="@id/item_constraint"
-            app:layout_constraintVertical_bias="0.163" />
+            app:layout_constraintVertical_bias="0.163"
+            android:textColor="@color/black"
+            />
 
         <TextView
             android:id="@+id/item_category"
@@ -70,8 +75,9 @@
             android:id="@+id/item_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_14"
             android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
             android:layout_marginBottom="@dimen/dimen_20"
             android:text="@string/item_amount"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -87,12 +93,14 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="August 8, 2021"
+            android:text="@string/item_date"
             android:textSize="10sp"
+            android:textColor="@color/teal_700"
             app:layout_constraintBottom_toBottomOf="@id/item_constraint"
             app:layout_constraintEnd_toEndOf="@id/item_constraint"
             app:layout_constraintTop_toTopOf="@id/item_constraint"
-            app:layout_constraintVertical_bias="0.859" />
+            app:layout_constraintVertical_bias="0.859"
+            tools:ignore="SmallSp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
