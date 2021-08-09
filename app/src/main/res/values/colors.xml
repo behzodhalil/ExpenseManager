@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#ffff4444</color>
+    <color name="ultramarine">#14145E</color>
+    <color name="turkish_rose">#6070A8</color>
+    <color name="crayola">#2991D0</color>
+    <color name="milk">#D5F5E3</color>
+    <color name="french_plum">#820263</color>
 </resources>
