@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrimaryEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="fontFamily">@font/rubik</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/turkish_rose</item>
+
+    </style>
+
+</resources>
