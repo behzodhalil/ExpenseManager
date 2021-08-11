@@ -25,7 +25,7 @@
             android:contentDescription="@string/app_name"
             android:text="Edit"
             android:textColor="@color/white"
-            android:background="@color/turkish_rose"
+            android:background="#820263"
             app:borderWidth="1dp"
             app:cornerRadius="10dp"
             app:icon="@drawable/ic_edit"
