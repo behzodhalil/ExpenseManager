@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal|center_vertical"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16"
         android:backgroundTint="@color/white"
-        android:hint="@string/add_title"
+        android:hint="@string/add_title_text"
         tools:ignore="UnusedAttribute">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -34,8 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16"
-        android:hint="@string/add_amount"
-        app:prefixText="$">
+        android:hint="@string/add_amount_text"
+        app:prefixText="@string/add_amount_prefixtext">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/add_amount"
@@ -48,11 +48,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/add_type_layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_margin="@dimen/dimen_16"
-        android:hint="@string/add_type"
+        android:hint="@string/add_type_text"
         app:boxBackgroundColor="@color/white">
 
         <AutoCompleteTextView
@@ -63,6 +63,7 @@
             android:inputType="none"
             android:labelFor="@id/add_type_layout"
             tools:ignore="LabelFor" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -72,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16"
-        android:hint="@string/add_tag"
+        android:hint="@string/add_tag_text"
         app:boxBackgroundColor="@color/white">
 
         <AutoCompleteTextView
@@ -87,19 +88,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/add_date_layout"
+        android:id="@+id/add_when_layout"
         style="@style/PrimaryEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16"
         android:clickable="true"
         android:focusable="true"
-        android:hint="@string/add_date"
+        android:hint="@string/add_when_text"
         app:endIconDrawable="@drawable/ic_calendar"
         app:endIconMode="custom">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/add_when"
+            android:id="@+id/add_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/rubik"
@@ -109,11 +110,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/add_desc_layout"
-        style="@style/PrimaryEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16"
-        android:hint="@string/add_description">
+        style="@style/PrimaryEditText"
+        android:hint="@string/add_desc_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/add_desc"
