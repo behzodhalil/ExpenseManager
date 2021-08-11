@@ -13,4 +13,12 @@
     <color name="crayola">#2991D0</color>
     <color name="milk">#D5F5E3</color>
     <color name="french_plum">#820263</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#1A1E21</color>
+    <color name="colorSecondary">#242A2E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorStroke">#707070</color>
+    <color name="lime_green">#6FCF97</color>
+    <color name="flamingo">#EB5757</color>
+
 </resources>
