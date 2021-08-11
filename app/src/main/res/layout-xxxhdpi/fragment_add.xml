@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@color/white"
     tools:context=".AddFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,21 +20,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_save"
+            android:layout_width="255dp"
             android:layout_height="wrap_content"
-            android:layout_width="125dp"
-            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginBottom="124dp"
             android:background="@drawable/button_background"
-            android:textColor="@color/white"
-            android:padding="@dimen/dimen_12"
-            android:text="@string/button_save"
             android:clickable="true"
-            android:focusable="true"
             android:ellipsize="start"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="@string/button_save"
+            android:textColor="@color/white"
+            app:backgroundTint="#820263"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/add_layout" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
