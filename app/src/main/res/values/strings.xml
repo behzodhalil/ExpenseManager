@@ -38,4 +38,13 @@
     <string name="income_amount">$ 2500</string>
     <string name="expense_amount">$ 2500</string>
     <string name="balance_amount">$ 6504</string>
+    <string name="button_save">Save</string>
+    <string name="add_desc_text">Description</string>
+    <string name="add_when_text">When</string>
+    <string name="add_tag_text">Tag</string>
+    <string name="add_type_text">Type</string>
+    <string name="add_amount_text">Amount</string>
+    <string name="add_amount_prefixtext">$</string>
+    <string name="add_title_text">Title</string>
+    <string name="successfully_save">Your cashflow saved successfully</string>
 </resources>

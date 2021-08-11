@@ -5,8 +5,40 @@
         <item name="boxBackgroundColor">@color/white</item>
         <item name="hintAnimationEnabled">true</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/turkish_rose</item>
+        <item name="android:textColor">@color/black</item>
+
 
     </style>
 
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="textAllCaps">true</item>
+        <item name="fontFamily">@font/rubik</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="background">@color/french_plum</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="FabStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlayExtended</item>
+    </style>
+    <style name="ShapeAppearanceOverlayExtended" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="background">@drawable/button_background</item>
+        <item name="cornerSize">90dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 </resources>
