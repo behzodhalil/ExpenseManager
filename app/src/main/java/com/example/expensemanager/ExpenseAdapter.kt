@@ -18,7 +18,7 @@ class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() 
     private val differCallBack = object : DiffUtil.ItemCallback<Expense>(){
 
         override fun areContentsTheSame(oldItem: Expense, newItem: Expense): Boolean {
-           return oldItem.id == newItem.id
+            return oldItem.id == newItem.id
         }
 
         override fun areItemsTheSame(oldItem: Expense, newItem: Expense): Boolean {
@@ -26,7 +26,7 @@ class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() 
         }
     }
 
-    private val differ = AsyncListDiffer(this,differCallBack)
+    val differ = AsyncListDiffer(this,differCallBack)
 
 
     override fun onBindViewHolder(holder: ExpenseViewHolder, position: Int) {
