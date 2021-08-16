@@ -32,6 +32,10 @@
         android:name="com.example.expensemanager.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="expense"
+            app:argType="com.example.expensemanager.model.Expense"
+            />
         <action
             android:id="@+id/action_detailsFragment_to_editFragment"
             app:destination="@id/editFragment" />
