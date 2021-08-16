@@ -14,9 +14,10 @@ import com.example.expensemanager.model.Expense
 import com.example.expensemanager.util.Constants
 import com.example.expensemanager.util.modifyIntoDatePicker
 import com.example.expensemanager.util.parseDouble
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
 
-
+@AndroidEntryPoint
 class AddFragment : BaseFragment<FragmentAddBinding,BaseViewModel>() {
 
     override val viewModel: BaseViewModel by activityViewModels()
@@ -93,13 +94,12 @@ class AddFragment : BaseFragment<FragmentAddBinding,BaseViewModel>() {
         val date = it.addDate.text.toString()
         val desc = it.addDesc.text.toString()
 
-        return Expense(title,amount,type,tag,date,desc)
+        return@getExpenseBinding Expense(title,amount,type,tag,date,desc)
     }
 
     override fun getViewBinding(
         inflater: LayoutInflater,
-        container: ViewGroup?
-    ) = FragmentAddBinding.inflate(inflater,container,false)
+        container: ViewGroup?) = FragmentAddBinding.inflate(inflater, container, false)
 
 
 }
