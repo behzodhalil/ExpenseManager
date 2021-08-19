@@ -20,5 +20,6 @@
     <color name="colorStroke">#707070</color>
     <color name="lime_green">#6FCF97</color>
     <color name="flamingo">#EB5757</color>
+    <color name="icon_background">#80DAFF</color>
 
 </resources>

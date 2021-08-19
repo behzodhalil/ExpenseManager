@@ -5,8 +5,8 @@
     <string name="item_category">Healthcare</string>
     <string name="item_amount">$ 200</string>
     <string name="item_date">August 8, 2021</string>
-    <string name="total_income">Total Income</string>
-    <string name="total_expense">Total Expense</string>
+    <string name="total_income">Income:</string>
+    <string name="total_expense">Expense:</string>
     <string name="total_balance">Total Balance</string>
     <string name="total_income_amount">$ 1000</string>
     <string name="total_expense_amount">$ 2500</string>
@@ -35,9 +35,9 @@
     <string name="income">Income</string>
     <string name="expense">Expense</string>
     <string name="balance">Balance</string>
-    <string name="income_amount">$ 2500</string>
-    <string name="expense_amount">$ 2500</string>
-    <string name="balance_amount">$ 6504</string>
+    <string name="income_amount">$ 0</string>
+    <string name="expense_amount">$ 0</string>
+    <string name="balance_amount">$ 0</string>
     <string name="button_save">Save</string>
     <string name="add_desc_text">Description</string>
     <string name="add_when_text">When</string>
@@ -48,4 +48,5 @@
     <string name="add_title_text">Title</string>
     <string name="successfully_save">Your cashflow saved successfully</string>
     <string name="successfully_delete">Your cashflow deleted successfully</string>
+    <string name="total_balance_text">Total Balance</string>
 </resources>

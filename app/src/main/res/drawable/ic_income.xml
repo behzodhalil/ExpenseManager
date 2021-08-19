@@ -5,54 +5,54 @@
     android:viewportHeight="512">
   <path
       android:pathData="m72,184h368v192h-368z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m72,152h368v192h-368z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m72,120h368v192h-368z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m72,88h368v192h-368z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m392,248a32,32 0,0 1,-32 32h-288v-192h320z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m392,120h-272a16,16 0,0 1,-16 16v96a16,16 0,0 1,16 16h246.111a28.944,28.944 0,0 0,25.889 -16z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="M152,184m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="M256,184m-64,0a64,64 0,1 1,128 0a64,64 0,1 1,-128 0"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m232,88h48v288h-48z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m232,280h48v96h-48z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m400,376v112h-169.34a95.94,95.94 0,0 1,-42.93 -10.14l-93.28,-46.63a26.169,26.169 0,0 1,-14.45 -23.39v-1.74a26.145,26.145 0,0 1,37.03 -23.77l90.97,41.67h16a24,24 0,0 1,0 -48h61.33l0.75,-0.45a109.177,109.177 0,0 1,104.97 -4.03z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m400,389.54v98.46h-155.44c71.253,-16.13 125.155,-44.46 155.44,-98.46z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m288,432h-64a8,8 0,0 1,0 -16h64a8,8 0,0 1,0 16z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m400,376h88v112h-88z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m440,464a16,16 0,1 1,16 -16,16.019 16.019,0 0,1 -16,16z"
-      android:fillColor="@color/white"/>
+      android:fillColor="@color/icon_background"/>
   <path
       android:pathData="m360,24h-8v192h8a32,32 0,0 1,32 32v-192a32,32 0,0 0,-32 -32z"
       android:fillColor="@color/white"/>
   <path
-      android:fillColor="#FF000000"
+      android:fillColor="@color/white"
       android:pathData="M152,184m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"/>
   <path
       android:fillColor="#FF000000"
