@@ -25,12 +25,6 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding,BaseViewModel>() {
     private val args: DetailsFragmentArgs by navArgs()
     override val viewModel: BaseViewModel by activityViewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val expense = args.expense
@@ -39,14 +33,6 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding,BaseViewModel>() {
         observeItems()
     }
 
-    private fun loadItem(expense: Expense) = with(binding.expenseDetailsLayout) {
-        detailsTitle.setText(expense.title)
-        detailsAmount.setText(expense.amount.toString())
-        detailsType.setText(expense.type)
-        detailsDate.setText(expense.date)
-        detailsTag.setText(expense.tag)
-        detailsDesc.setText(expense.note)
-    }
     private fun getById(id: Int) {
         viewModel.getById(id)
     }

@@ -119,9 +119,6 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
         val (totalIncome, totalExpense) = expense.partition { it.type == "Income" }
         val income = totalIncome.sumOf { it.amount }
         val expense = totalExpense.sumOf{ it.amount }
-        incomeAmount.text = "+ ".plus(convertToGlobal(income))
-        expenseAmount.text = "- ".plus(convertToGlobal(expense))
-        balanceAmount.text = convertToGlobal(income - expense)
     }
 
 
