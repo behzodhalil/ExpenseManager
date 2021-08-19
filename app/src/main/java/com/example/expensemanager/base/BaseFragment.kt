@@ -26,7 +26,7 @@ abstract class BaseFragment <VB: ViewBinding,VM: ViewModel> : Fragment()  {
         return binding.root
     }
 
-    protected abstract fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): VB
+    abstract fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): VB
 
 
     fun toast(message: String) {

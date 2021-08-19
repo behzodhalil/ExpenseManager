@@ -2,14 +2,13 @@ package com.example.expensemanager.base
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
+
 import androidx.lifecycle.viewModelScope
 import com.example.expensemanager.model.Expense
 import com.example.expensemanager.repo.ExpenseRepository
 import com.example.expensemanager.util.DetailState
 import com.example.expensemanager.util.ViewState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collect
@@ -17,10 +16,12 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class BaseViewModel @Inject constructor(
+class BaseViewModel @Inject constructor
+    (
     application: Application,
     private val repo: ExpenseRepository
-) : AndroidViewModel(application)
+    ) : AndroidViewModel(application)
+
 {
     private val _viewState = MutableStateFlow<ViewState>(ViewState.Loading)
     private val _detailState = MutableStateFlow<DetailState>(DetailState.Loading)
@@ -70,4 +71,6 @@ class BaseViewModel @Inject constructor(
 
 
 }
+
+
 
