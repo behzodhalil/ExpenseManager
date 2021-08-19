@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expensemanager.databinding.ExpenseItemLayoutBinding
 import com.example.expensemanager.model.Expense
@@ -29,11 +30,13 @@ class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() 
     val differ = AsyncListDiffer(this,differCallBack)
 
 
+
     override fun onBindViewHolder(holder: ExpenseViewHolder, position: Int) {
         val item = differ.currentList[position]
         holder.binding.apply {
             itemText.text = item.title
             itemCategory.text = item.type
+
 
             when(item.type) {
                 "Income" -> {

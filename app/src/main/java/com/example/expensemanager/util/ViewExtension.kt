@@ -24,6 +24,20 @@ fun convertToGlobal (amount: Double): String {
 fun parseDouble(value: String?): Double {
     return if (value == null || value.isEmpty()) Double.NaN else value.toDouble()
 }
+val String.cleanTextContent: String
+    get() {
+        // strips off all non-ASCII characters
+        var text = this
+        text = text.replace("[^\\x00-\\x7F]".toRegex(), "")
+
+        // erases all the ASCII control characters
+        text = text.replace("[\\p{Cntrl}&&[^\r\n\t]]".toRegex(), "")
+
+        // removes non-printable characters from Unicode
+        text = text.replace("\\p{C}".toRegex(), "")
+        text = text.replace(",".toRegex(), "")
+        return text.trim()
+    }
 
 fun TextInputEditText.modifyIntoDatePicker(
     context: Context,
