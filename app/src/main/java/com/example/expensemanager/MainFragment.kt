@@ -8,6 +8,7 @@ import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expensemanager.base.BaseFragment
@@ -15,6 +16,7 @@ import com.example.expensemanager.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentMainBinding
 import com.example.expensemanager.model.Expense
 import com.example.expensemanager.util.*
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 
@@ -39,13 +41,75 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
         setUpRecyclerView()
         initializeView()
         observeExpense()
-
+        onClickExpense()
+        swipeToDelete()
     }
 
-    //function
+    private fun onClickExpense() {
+        expenseAdapter.setOnClickListener {
+            val bundle = Bundle().apply {
+                putParcelable("expense",it)
+            }
+            findNavController().navigate(R.id.action_mainFragment_to_detailsFragment,bundle)
+
+        }
+    }
+
+    private fun swipeToDelete() {
+        // init item touch callback for swipe action
+        val itemTouchHelperCallback = object : ItemTouchHelper.SimpleCallback(
+            ItemTouchHelper.UP or ItemTouchHelper.DOWN,
+            ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
+        ) {
+            override fun onMove(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder,
+                target: RecyclerView.ViewHolder,
+            ): Boolean {
+                return true
+            }
+
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                // get item position & delete notes
+                val position = viewHolder.adapterPosition
+                val expense = expenseAdapter.differ.currentList[position]
+                val expenseItem = Expense(
+                    expense.title,
+                    expense.amount,
+                    expense.type,
+                    expense.tag,
+                    expense.date,
+                    expense.note,
+                    expense.createdate,
+                    expense.id
+                )
+                viewModel.deleteExpense(expenseItem)
+                Snackbar.make(
+                    binding.root,
+                    getString(R.string.successfully_delete),
+                    Snackbar.LENGTH_LONG
+                )
+                    .apply {
+                        setAction("Undo") {
+                            viewModel.insertExpense(
+                                expenseItem
+                            )
+                        }
+                        show()
+                    }
+            }
+        }
+        ItemTouchHelper(itemTouchHelperCallback).apply {
+            attachToRecyclerView(binding.controlRecylerView)
+        }
+    }
+
+
+        //function
     private fun setUpRecyclerView() = with(binding) {
         expenseAdapter = ExpenseAdapter()
         val recyclerView = binding.controlRecylerView
+
         recyclerView.adapter = expenseAdapter
         recyclerView.layoutManager = LinearLayoutManager(activity)
     }
@@ -92,7 +156,7 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
     }
 
     private fun hideAllViews() = with(binding) {
-        mainRelative.hide()
+        controlRecylerView.hide()
         emptyLayout.show()
     }
 
@@ -114,13 +178,7 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
                 }
             }
         )
-        expenseAdapter.setOnClickListener {
-            val bundle = Bundle().apply {
-                putSerializable("expense",it)
-            }
-            findNavController().navigate(R.id.action_mainFragment_to_detailsFragment)
-            bundle
-        }
+
     }
 
 

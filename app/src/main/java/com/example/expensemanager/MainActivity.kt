@@ -15,10 +15,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navHostFragment: NavHostFragment
+
     private val repo by lazy { ExpenseRepository(AppDatabase(this)) }
     private val viewModel: BaseViewModel by viewModels {
         viewModelFactory { BaseViewModel(this.application, repo) }
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
@@ -28,8 +30,6 @@ class MainActivity : AppCompatActivity() {
         initializeView()
 
     }
-
-
 
     private fun initializeView() {
         navHostFragment = supportFragmentManager
