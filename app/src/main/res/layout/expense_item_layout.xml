@@ -8,15 +8,16 @@
     android:layout_marginRight="@dimen/dimen_8"
     android:layout_marginTop="@dimen/dimen_8"
     android:layout_marginBottom="@dimen/dimen_8"
-    app:cardCornerRadius="@dimen/dimen_4"
+    app:cardCornerRadius="@dimen/dimen_16"
     app:cardElevation="@dimen/dimen_8"
+    app:cardBackgroundColor="@color/white"
 
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/item_constraint"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+
         >
 
         <ImageView
@@ -28,7 +29,7 @@
             app:layout_constraintTop_toTopOf="@id/item_constraint"
             android:layout_margin="@dimen/dimen_8"
             android:padding="@dimen/dimen_8"
-            android:background="@drawable/ic_ellipse"
+            android:background="@drawable/ic_rectangle_11"
             android:src="@drawable/ic_income"
             android:contentDescription="@string/item_image"
             />
@@ -39,16 +40,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dimen_12"
             android:layout_marginLeft="@dimen/dimen_8"
-            android:layout_marginStart="@dimen/dimen_8"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/item_text"
-            android:fontFamily="@font/rubik"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@id/item_constraint"
             app:layout_constraintLeft_toRightOf="@id/item_icon"
             app:layout_constraintTop_toTopOf="@id/item_constraint"
-            app:layout_constraintVertical_bias="0.163"
-            android:textColor="@color/black"
-            />
+            app:layout_constraintVertical_bias="0.163" />
 
         <TextView
             android:id="@+id/item_category"
@@ -56,15 +55,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
             android:layout_marginRight="@dimen/dimen_8"
-            android:layout_marginEnd="@dimen/dimen_8"
             android:background="@drawable/ic_rectangle"
-            android:paddingTop="@dimen/dimen_2"
+            android:fontFamily="@font/poppins_medium"
             android:paddingLeft="@dimen/dimen_4"
+            android:paddingTop="@dimen/dimen_2"
             android:paddingRight="@dimen/dimen_4"
             android:text="@string/item_category"
             android:textColor="@color/white"
             android:textSize="10sp"
-            android:fontFamily="@font/rubik"
             app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintLeft_toRightOf="@id/item_icon"
             app:layout_constraintRight_toRightOf="@id/item_constraint"
@@ -77,8 +75,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_14"
             android:layout_marginRight="@dimen/dimen_16"
-            android:layout_marginEnd="@dimen/dimen_16"
             android:layout_marginBottom="@dimen/dimen_20"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/item_amount"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
             android:textColor="@color/red"
@@ -93,9 +91,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/item_date"
-            android:textSize="10sp"
             android:textColor="@color/teal_700"
+            android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@id/item_constraint"
             app:layout_constraintEnd_toEndOf="@id/item_constraint"
             app:layout_constraintTop_toTopOf="@id/item_constraint"

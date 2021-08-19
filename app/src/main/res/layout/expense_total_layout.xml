@@ -1,52 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="145dp"
-    android:layout_margin="@dimen/dimen_8">
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardCornerRadius="@dimen/dimen_16"
+    android:layout_margin="@dimen/dimen_12"
+    app:cardBackgroundColor="#867AE9"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/total_expense"
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="@dimen/dimen_8"
-        android:layout_marginLeft="128dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginRight="176dp"
-        android:layout_marginBottom="84dp"
-        android:fontFamily="@font/rubik"
-        android:text="Total Expense"
-        android:textColor="@color/black"
-        android:textSize="14sp" />
+        <ImageView
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_wallet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/total_income"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="@dimen/dimen_8"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="292dp"
-        android:layout_marginRight="292dp"
-        android:layout_marginBottom="84dp"
-        android:fontFamily="@font/rubik"
-        android:text="Total Income"
-        android:textColor="@color/black"
-        android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/icon_up"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="15dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_up_arrow"
+            app:layout_constraintBottom_toTopOf="@id/icon_down"
+            app:layout_constraintRight_toLeftOf="@id/total_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/icon_down"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="15dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/ic_down_arrow"
+            app:layout_constraintRight_toLeftOf="@id/total_expense"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/total_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/total_balance_text"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.256" />
+
+        <TextView
+            android:id="@+id/total_balance_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/total_balance_amount"
+            android:textSize="@dimen/dimen_28"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.89" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="125dp"
+            android:background="#51C4D3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/total_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/total_income"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.685"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.197" />
+
+        <TextView
+            android:id="@+id/total_income_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="282dp"
+            android:layout_marginLeft="282dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/total_income_amount"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@id/total_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.159" />
+
+        <TextView
+            android:id="@+id/total_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/total_expense"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.693"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.753" />
+
+        <TextView
+            android:id="@+id/total_expense_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="284dp"
+            android:layout_marginLeft="284dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/total_expense_amount"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@id/total_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.768" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
