@@ -15,21 +15,7 @@
         layout="@layout/expense_details_layout"
         />
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/edit_button"
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="170dp"
-            android:layout_marginRight="25dp"
-            android:contentDescription="@string/app_name"
-            android:text="Edit"
-            android:textColor="@color/white"
-            android:background="#820263"
-            app:borderWidth="1dp"
-            app:cornerRadius="10dp"
-            app:icon="@drawable/ic_edit"
-            app:iconTint="@color/white" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
