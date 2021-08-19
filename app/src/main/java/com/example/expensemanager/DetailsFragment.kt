@@ -1,39 +1,52 @@
 package com.example.expensemanager
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.expensemanager.base.BaseFragment
 import com.example.expensemanager.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentDetailsBinding
 import com.example.expensemanager.model.Expense
 import com.example.expensemanager.util.DetailState
+import com.example.expensemanager.util.cleanTextContent
 import com.example.expensemanager.util.convertToGlobal
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
-import kotlin.math.exp
 
 
+@AndroidEntryPoint
 class DetailsFragment : BaseFragment<FragmentDetailsBinding,BaseViewModel>() {
+
+    private val args: DetailsFragmentArgs by navArgs()
+    override val viewModel: BaseViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
     }
-    private val args: DetailsFragmentArgs by navArgs()
-    override val viewModel: BaseViewModel by activityViewModels()
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val expense = args.expense
-        getById(expense.id)
+        val id = expense.id
+        getById(id)
         observeItems()
     }
 
+    private fun loadItem(expense: Expense) = with(binding.expenseDetailsLayout) {
+        detailsTitle.setText(expense.title)
+        detailsAmount.setText(expense.amount.toString())
+        detailsType.setText(expense.type)
+        detailsDate.setText(expense.date)
+        detailsTag.setText(expense.tag)
+        detailsDesc.setText(expense.note)
+    }
     private fun getById(id: Int) {
         viewModel.getById(id)
     }
@@ -52,6 +65,9 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding,BaseViewModel>() {
                 is DetailState.Success -> {
                     onDetailsSaved(detailState.expense)
                 }
+                DetailState.Empty -> {
+                    findNavController().navigateUp()
+                }
             }
 
         }
@@ -59,7 +75,7 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding,BaseViewModel>() {
 
     private fun onDetailsSaved(expense: Expense) = with(binding.expenseDetailsLayout) {
         detailsTitle.text = expense.title
-        detailsAmount.text = convertToGlobal(expense.amount)
+        detailsAmount.text = convertToGlobal(expense.amount).cleanTextContent
         detailsType.text = expense.type
         detailsTag.text = expense.tag
         detailsDate.text = expense.date

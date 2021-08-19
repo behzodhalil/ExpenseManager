@@ -1,12 +1,17 @@
 package com.example.expensemanager.model
 
+import android.os.Parcelable
+import androidx.annotation.Keep
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 import java.io.Serializable
 import java.text.DateFormat
 
+
 @Entity(tableName = "expense_table")
+@Parcelize
 data class Expense(
 
 
@@ -34,7 +39,7 @@ data class Expense(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name="id")
     var id: Int = 0
-): Serializable {
+): Parcelable {
     val createdAtDateFormat: String
         get() = DateFormat.getDateTimeInstance()
             .format(createdate)
