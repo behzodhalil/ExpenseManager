@@ -35,13 +35,8 @@
         <argument
             android:name="expense"
             app:argType="com.example.expensemanager.model.Expense"
+
             />
-        <action
-            android:id="@+id/action_detailsFragment_to_editFragment"
-            app:destination="@id/editFragment" />
-        <action
-            android:id="@+id/action_detailsFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
