@@ -7,33 +7,35 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:layout_marginBottom="@dimen/dimen_32"
+    android:background="#3629B7"
     >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/expense_details_constraint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        >
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/expense_details_constraint"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
 
-     <ImageView
-         android:id="@+id/details_image"
-         android:layout_width="928dp"
-         android:layout_height="812dp"
-         android:src="@drawable/ic_component_3"
-         android:contentDescription="@string/details_image"
-         tools:layout_editor_absoluteX="-291dp"
-         tools:ignore="MissingConstraints"
-         tools:layout_editor_absoluteY="-254dp" />
-
-        <TextView
+         <ImageView
+                 android:id="@+id/rectangle_title"
+                 android:layout_width="250dp"
+                 android:layout_height="70dp"
+                 android:layout_marginStart="16dp"
+                 android:background="@drawable/ic_rectangle_35"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintHorizontal_bias="0.054"
+                 app:layout_constraintLeft_toLeftOf="parent"
+                 app:layout_constraintRight_toRightOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintVertical_bias="0.025" />
+         <TextView
             android:id="@+id/details_title_headline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginLeft="@dimen/dimen_20"
             android:layout_marginTop="@dimen/dimen_32"
-            android:fontFamily="@font/rubik"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/details_title_headline"
             android:textColor="@color/teal_700"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
@@ -44,12 +46,12 @@
             android:id="@+id/details_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:fontFamily="@font/rubik"
+            android:layout_marginLeft="@dimen/dimen_28"
+            android:layout_marginStart="@dimen/dimen_28"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_title_headline"
             tools:text="Samsung level earphones" />
