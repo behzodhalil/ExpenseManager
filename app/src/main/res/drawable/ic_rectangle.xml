@@ -13,6 +13,6 @@
       android:pathData="M0.5,0.5h155v35h-155z"
       android:strokeWidth="1"
       android:fillColor="@color/purple_200"
-      android:strokeColor="#00000000"
+      android:strokeColor="@color/purple_200"
       tools:ignore="VectorRaster" />
 </vector>
