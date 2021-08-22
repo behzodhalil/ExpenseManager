@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="PrimaryEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="fontFamily">@font/rubik</item>
-        <item name="boxBackgroundColor">@color/white</item>
         <item name="hintAnimationEnabled">true</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/black</item>
-
-
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
     </style>
 
-    <style name="PrimaryButton" parent="Widget.MaterialComponents.FloatingActionButton">
-        <item name="textAllCaps">true</item>
+    <style name="DropDown" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
         <item name="fontFamily">@font/rubik</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="rippleColor">@color/white</item>
-        <item name="background">@color/french_plum</item>
-        <item name="android:padding">10dp</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
     </style>
 
-    <style name="FabStyle" parent="Widget.Design.FloatingActionButton">
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlayExtended</item>
-    </style>
-    <style name="ShapeAppearanceOverlayExtended" parent="ShapeAppearance.MaterialComponents.SmallComponent">
-        <item name="cornerFamilyBottomLeft">rounded</item>
-        <item name="cornerFamilyTopRight">rounded</item>
-        <item name="cornerFamilyBottomRight">rounded</item>
-        <item name="cornerFamilyTopLeft">rounded</item>
-        <item name="background">@drawable/button_background</item>
-        <item name="cornerSize">90dp</item>
+    <style name="MaterialButton" parent="">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:text">Save</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">10dp</item>
     </style>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.Bridge">
@@ -40,5 +41,25 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DetailStyleHeadline" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_marginStart">@dimen/dimen_38</item>
+        <item name="android:textColor">@color/teal_700</item>
+        <item name="android:textSize">@dimen/dimen_16</item>
+        <item name="android:layout_marginTop">@dimen/dimen_24</item>
+    </style>
+
+    <style name="DetailStyleDesc" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_marginStart">@dimen/dimen_38</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8</item>
     </style>
 </resources>

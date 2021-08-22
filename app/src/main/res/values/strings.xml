@@ -8,9 +8,9 @@
     <string name="total_income">Income:</string>
     <string name="total_expense">Expense:</string>
     <string name="total_balance">Total Balance</string>
-    <string name="total_income_amount">$ 1000</string>
-    <string name="total_expense_amount">$ 2500</string>
-    <string name="total_balance_amount">$ 5450</string>
+    <string name="total_income_amount">$ 0</string>
+    <string name="total_expense_amount">$ 0</string>
+    <string name="total_balance_amount">$ 0</string>
     <string name="details_image">Details Image</string>
     <string name="details_amount_headline">Amount</string>
     <string name="details_type_headline">Type</string>
@@ -29,8 +29,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="splash_title">Expense Manager</string>
     <string name="splash_about">Stay on track with your expenses so you’ll never run out of money again! Start budgeting and saving so you can afford nice things.</string>
-    <string name="empty_title">Cashflow don`t have yet!</string>
-    <string name="empty_desc">After your first adding you will be able to view it here</string>
+    <string name="empty_title">There are no data available</string>
     <string name="todo">TODO</string>
     <string name="income">Income</string>
     <string name="expense">Expense</string>
@@ -49,4 +48,7 @@
     <string name="successfully_save">Your cashflow saved successfully</string>
     <string name="successfully_delete">Your cashflow deleted successfully</string>
     <string name="total_balance_text">Total Balance</string>
+    <string name="expense_manager">Expense Manager</string>
+
+    <string name="recent_activities">Recent Activities</string>
 </resources>
