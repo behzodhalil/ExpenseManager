@@ -39,7 +39,7 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding,BaseViewModel>() {
 
     private fun observeItems() = lifecycleScope.launchWhenCreated {
 
-        viewModel.detailState.collect() {detailState ->
+        viewModel.detailState.collect { detailState ->
 
             when(detailState){
                 DetailState.Loading -> {
