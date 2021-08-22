@@ -1,46 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/empty_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:gravity="center">
+    android:layout_height="250dp"
+    android:background="#252771">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="53dp"
+        android:src="@drawable/ic_cancel" />
 
     <TextView
         android:id="@+id/empty_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/dimen_80"
-        android:layout_marginRight="@dimen/dimen_50"
-        android:fontFamily="@font/rubik"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginEnd="63dp"
+        android:fontFamily="@font/poppins_medium"
         android:text="@string/empty_title"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        android:textColor="@color/black"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="@dimen/dimen_80"
-        android:layout_marginEnd="@dimen/dimen_50" />
 
-    <TextView
-        android:id="@+id/empty_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/empty_title"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="@dimen/dimen_50"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="@dimen/dimen_50"
-        android:layout_marginRight="-5dp"
-        android:fontFamily="@font/rubik"
-        android:text="@string/empty_desc"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+        android:textColor="@color/white" />
+
 
 </RelativeLayout>
