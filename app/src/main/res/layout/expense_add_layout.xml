@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="#252771"
     >
 
 
@@ -14,7 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16"
-        android:backgroundTint="@color/white"
         android:hint="@string/add_title_text"
         tools:ignore="UnusedAttribute">
 
@@ -50,10 +50,10 @@
         android:id="@+id/add_type_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        style="@style/DropDown"
         android:layout_margin="@dimen/dimen_16"
         android:hint="@string/add_type_text"
-        app:boxBackgroundColor="@color/white">
+        >
 
         <AutoCompleteTextView
             android:id="@+id/add_type"
@@ -62,19 +62,18 @@
             android:fontFamily="@font/rubik"
             android:inputType="none"
             android:labelFor="@id/add_type_layout"
-            tools:ignore="LabelFor" />
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/add_tag_layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        style="@style/DropDown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_16"
-        android:hint="@string/add_tag_text"
-        app:boxBackgroundColor="@color/white">
+        android:hint="@string/add_tag_text">
 
         <AutoCompleteTextView
             android:id="@+id/add_tag"
@@ -83,7 +82,7 @@
             android:fontFamily="@font/rubik"
             android:inputType="none"
             android:labelFor="@id/add_tag"
-            tools:ignore="LabelFor" />
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:layout_marginBottom="@dimen/dimen_32"
-    android:background="#3629B7"
+    android:background="#252771"
     >
 
          <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,43 +14,18 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content">
 
-         <ImageView
-                 android:id="@+id/rectangle_title"
-                 android:layout_width="250dp"
-                 android:layout_height="70dp"
-                 android:layout_marginStart="16dp"
-                 android:background="@drawable/ic_rectangle_35"
-                 app:layout_constraintBottom_toBottomOf="parent"
-                 app:layout_constraintHorizontal_bias="0.054"
-                 app:layout_constraintLeft_toLeftOf="parent"
-                 app:layout_constraintRight_toRightOf="parent"
-                 app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintTop_toTopOf="parent"
-                 app:layout_constraintVertical_bias="0.025" />
-         <TextView
+           <TextView
             android:id="@+id/details_title_headline"
-            android:layout_width="55dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="@dimen/dimen_24"
-            android:layout_marginLeft="@dimen/dimen_20"
-            android:layout_marginTop="@dimen/dimen_32"
+            style="@style/DetailStyleHeadline"
+            android:layout_marginTop="@dimen/dimen_28"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/details_title_headline"
-            android:textColor="@color/teal_700"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/details_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_28"
-            android:layout_marginStart="@dimen/dimen_28"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/poppins_medium"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/white"
+            style="@style/DetailStyleDesc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_title_headline"
             tools:text="Samsung level earphones" />
@@ -59,28 +33,16 @@
 
         <TextView
             android:id="@+id/details_amount_headline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
+            style="@style/DetailStyleHeadline"
             android:layout_marginTop="@dimen/dimen_24"
-            android:fontFamily="@font/rubik"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/details_amount_headline"
-            android:textColor="@color/teal_700"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_title" />
 
         <TextView
             android:id="@+id/details_amount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:fontFamily="@font/rubik"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black"
+            style="@style/DetailStyleDesc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_amount_headline"
             tools:text="Amount" />
@@ -88,28 +50,15 @@
 
         <TextView
             android:id="@+id/details_type_headline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_24"
-            android:fontFamily="@font/rubik"
+            style="@style/DetailStyleHeadline"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/details_type_headline"
-            android:textColor="@color/teal_700"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_amount" />
 
         <TextView
             android:id="@+id/details_type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:fontFamily="@font/rubik"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black"
+            style="@style/DetailStyleDesc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_type_headline"
             tools:text="Income" />
@@ -117,28 +66,14 @@
 
         <TextView
             android:id="@+id/details_tag_headline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_24"
-            android:fontFamily="@font/rubik"
+            style="@style/DetailStyleHeadline"
             android:text="@string/details_tag_headline"
-            android:textColor="@color/teal_700"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_type" />
 
         <TextView
             android:id="@+id/details_tag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:fontFamily="@font/rubik"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black"
+            style="@style/DetailStyleDesc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_tag_headline"
             tools:text="Healthcare" />
@@ -146,84 +81,42 @@
 
         <TextView
             android:id="@+id/details_when"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_24"
-            android:fontFamily="@font/rubik"
+            style="@style/DetailStyleHeadline"
             android:text="@string/details_when"
-            android:textColor="@color/teal_700"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_tag" />
 
         <TextView
             android:id="@+id/details_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:fontFamily="@font/rubik"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black"
+            style="@style/DetailStyleDesc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_when"
             tools:text="August 08, 2021" />
 
         <TextView
             android:id="@+id/details_desc_headline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_24"
-            android:fontFamily="@font/rubik"
+            style="@style/DetailStyleHeadline"
             android:text="@string/details_desc_headline"
-            android:textColor="@color/teal_700"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_date" />
 
         <TextView
             android:id="@+id/details_desc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:fontFamily="@font/rubik"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black"
+            style="@style/DetailStyleDesc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_desc_headline"
             tools:text="You can write something" />
 
         <TextView
             android:id="@+id/details_create_date_headline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_24"
-            android:fontFamily="@font/rubik"
+            style="@style/DetailStyleHeadline"
             android:text="@string/details_create_date_headline"
-            android:textColor="@color/teal_700"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_desc" />
 
         <TextView
             android:id="@+id/details_created_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginLeft="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:fontFamily="@font/rubik"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black"
+            style="@style/DetailStyleDesc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/details_create_date_headline"
             tools:text="Sunday, 18 Dec 2021" />
