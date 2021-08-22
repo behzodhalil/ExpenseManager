@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#3629B7"
+    android:background="#252771"
     tools:context=".MainFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -16,55 +16,57 @@
 
         <RelativeLayout
             android:id="@+id/main_relative"
+            android:layout_marginTop="@dimen/dimen_12"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
            <TextView
+                android:id="@+id/expense_manager_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Expense Manager"
+                android:text="@string/expense_manager"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/white"
-                android:textSize="@dimen/dimen_20"
+                android:textSize="20sp"
                 android:layout_marginTop="8dp"
-                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
                 />
             <include
+                android:id="@+id/expense_total_view"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 layout="@layout/expense_total_layout"
                 android:layout_marginLeft="@dimen/dimen_16"
                 android:layout_marginRight="@dimen/dimen_16"
                 android:layout_marginTop="45dp"
-
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Recent Activities"
+                android:text="@string/recent_activities"
                 android:layout_marginTop="150dp"
                 android:fontFamily="@font/poppins_medium"
-                android:textSize="@dimen/dimen_20"
+                android:textSize="20sp"
                 android:textColor="@color/white"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 />
+
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/control_recyler_view"
-                android:layout_marginTop="180dp"
+                android:id="@+id/control_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="visible"
-                tools:listitem="@layout/expense_item_layout"
+                android:layout_marginTop="180dp"
                 android:nestedScrollingEnabled="false"
-                />
+                android:visibility="visible"
+                tools:listitem="@layout/expense_item_layout" />
 
         </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
     <ViewStub
         android:id="@+id/empty_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout="@layout/empty_layout"
@@ -85,6 +87,6 @@
         android:src="@drawable/ic_baseline_add"
         app:borderWidth="0dp"
         app:tint="@color/white"
-        tools:ignore="UnusedAttribute" />
+        tools:ignore="UnusedAttribute,ImageContrastCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

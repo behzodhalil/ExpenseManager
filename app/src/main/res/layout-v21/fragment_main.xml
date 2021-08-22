@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="#252771"
     tools:context=".MainFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -16,145 +16,52 @@
 
         <RelativeLayout
             android:id="@+id/main_relative"
+            android:layout_marginTop="@dimen/dimen_12"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="505dp"
-                android:layout_height="358dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginLeft="-94dp"
-                android:layout_marginTop="-48dp"
-                android:layout_marginRight="0dp"
-                android:src="@drawable/ic_component_7"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="-94dp"
-                android:layout_marginEnd="0dp"
-                android:contentDescription="@string/todo" />
-
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="347dp"
-                android:layout_height="150dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="217dp"
-                android:layout_marginLeft="217dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="-153dp"
-                android:layout_marginRight="-153dp"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/ic_component_6" />
-
-
             <TextView
-                android:id="@+id/income"
+                android:id="@+id/expense_manager_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="35dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="75dp"
-                android:fontFamily="@font/rubik"
-                android:text="@string/income"
+                android:text="@string/expense_manager"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/income_amount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="25dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="121dp"
-                android:fontFamily="@font/rubik"
-                android:text="@string/income_amount"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/expense"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="157dp"
-                android:layout_marginLeft="157dp"
-                android:layout_marginTop="75dp"
-                android:fontFamily="@font/rubik"
-                android:text="@string/expense"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/expense_amount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="121dp"
-                android:fontFamily="@font/rubik"
-                android:text="@string/expense_amount"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/balance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="284dp"
-                android:layout_marginLeft="284dp"
-                android:layout_marginTop="75dp"
-                android:fontFamily="@font/rubik"
-                android:text="@string/balance"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/balance_amount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="273dp"
-                android:layout_marginLeft="273dp"
-                android:layout_marginTop="121dp"
-                android:fontFamily="@font/rubik"
-                android:text="@string/balance_amount"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/control_recyler_view"
-                android:layout_marginTop="180dp"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="110dp"
+                />
+            <include
+                android:id="@+id/expense_total_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="visible"
-                tools:listitem="@layout/expense_item_layout"
-                android:nestedScrollingEnabled="false"
+                android:layout_height="100dp"
+                layout="@layout/expense_total_layout"
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:layout_marginTop="45dp"
                 />
 
-        </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recent_activities"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"
+                />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/control_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="180dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible"
+                tools:listitem="@layout/expense_item_layout" />
+
+        </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
     <ViewStub
@@ -175,11 +82,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/dimen_36"
-        android:backgroundTint="@color/turkish_rose"
+        android:backgroundTint="#00B4FF"
         android:contentDescription="@string/app_name"
         android:src="@drawable/ic_baseline_add"
         app:borderWidth="0dp"
         app:tint="@color/white"
-        tools:ignore="UnusedAttribute" />
+        tools:ignore="UnusedAttribute,ImageContrastCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
