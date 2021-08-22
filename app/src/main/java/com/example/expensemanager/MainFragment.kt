@@ -100,7 +100,7 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
             }
         }
         ItemTouchHelper(itemTouchHelperCallback).apply {
-            attachToRecyclerView(binding.controlRecylerView)
+            attachToRecyclerView(binding.controlRecyclerView)
         }
     }
 
@@ -108,7 +108,7 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
         //function
     private fun setUpRecyclerView() = with(binding) {
         expenseAdapter = ExpenseAdapter()
-        val recyclerView = binding.controlRecylerView
+        val recyclerView = binding.controlRecyclerView
 
         recyclerView.adapter = expenseAdapter
         recyclerView.layoutManager = LinearLayoutManager(activity)
@@ -119,6 +119,10 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
         val (totalIncome, totalExpense) = expense.partition { it.type == "Income" }
         val income = totalIncome.sumOf { it.amount }
         val expense = totalExpense.sumOf{ it.amount }
+        expenseTotalView.totalIncomeAmount.text = "+ ".plus(convertToGlobal(income))
+        expenseTotalView.totalExpenseAmount.text = "- ".plus(convertToGlobal(expense))
+        expenseTotalView.totalBalanceAmount.text = convertToGlobal(income-expense)
+
     }
 
 
@@ -149,11 +153,11 @@ class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
     private fun showAllViews() = with(binding) {
         mainRelative.show()
         emptyLayout.hide()
-        controlRecylerView.show()
+        controlRecyclerView.show()
     }
 
     private fun hideAllViews() = with(binding) {
-        controlRecylerView.hide()
+        controlRecyclerView.hide()
         emptyLayout.show()
     }
 
