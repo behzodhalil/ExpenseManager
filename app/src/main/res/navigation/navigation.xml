@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.expensemanager.view.splash.MainFragment"
+        android:name="com.example.expensemanager.view.home.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -34,7 +34,7 @@
         tools:layout="@layout/fragment_details" >
         <argument
             android:name="expense"
-            app:argType="com.example.expensemanager.model.Expense"
+            app:argType="com.example.expensemanager.model.data.Expense"
 
             />
     </fragment>

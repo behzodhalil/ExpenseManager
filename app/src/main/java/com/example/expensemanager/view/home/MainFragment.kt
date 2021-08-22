@@ -1,4 +1,4 @@
-package com.example.expensemanager.view.splash
+package com.example.expensemanager.view.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

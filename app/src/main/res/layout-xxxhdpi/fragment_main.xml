@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#252771"
-    tools:context=".view.splash.MainFragment">
+    tools:context=".view.home.MainFragment">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/main_dashboard_scroll_view"
