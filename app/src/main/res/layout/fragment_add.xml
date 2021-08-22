@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="#252771"
     tools:context=".AddFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -19,18 +21,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_save"
+            style="@style/MaterialButton"
+            android:layout_width="255dp"
             android:layout_height="wrap_content"
-            android:layout_width="125dp"
-            android:layout_marginTop="@dimen/dimen_8"
-            android:background="@drawable/button_background"
-            android:textColor="@color/white"
-            android:padding="@dimen/dimen_12"
-            android:text="@string/button_save"
-            android:clickable="true"
-            android:focusable="true"
-            android:ellipsize="start"
+            android:layout_marginBottom="124dp"
+            android:textColor="#212121"
+            app:backgroundTint="#867AE9"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/add_layout" />

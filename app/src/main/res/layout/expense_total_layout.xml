@@ -116,7 +116,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="282dp"
-            android:layout_marginLeft="282dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_income_amount"
             android:textColor="@color/white"
@@ -147,8 +146,7 @@
             android:id="@+id/total_expense_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="284dp"
-            android:layout_marginLeft="284dp"
+            android:layout_marginStart="286dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_expense_amount"
             android:textColor="@color/white"
@@ -160,9 +158,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.768" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 </androidx.cardview.widget.CardView>

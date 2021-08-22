@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/french_plum"
+    android:background="@color/white"
     tools:context=".SplashFragment">
 
     <ImageView
         android:id="@+id/splash_image"
         android:layout_width="1188dp"
         android:layout_height="915dp"
-        android:contentDescription="TODO"
         android:adjustViewBounds="true"
-
-        android:src="@drawable/ic_background"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_splash_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

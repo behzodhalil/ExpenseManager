@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_cancel.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_splash_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/font/poppins_medium.xml" value="0.284375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-v21/fragment_main.xml" value="0.96875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_main.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/empty_layout.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_add_layout.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_details_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_total_layout.xml" value="0.8" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_add.xml" value="0.8683274021352313" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_details.xml" value="0.928125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_main.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_splash.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/item_autocomplete_layout.xml" value="0.16354166666666667" />
+      </map>
+    </option>
+  </component>
   <component name="FindBugsConfigurable">
     <option name="make" value="true" />
     <option name="effort" value="default" />
@@ -14,5 +38,12 @@
   </component>
   <component name="SuppressionsComponent">
     <option name="suppComments" value="[]" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.152" />
+      </ProjectState>
+    </option>
   </component>
 </project>

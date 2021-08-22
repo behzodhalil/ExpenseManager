@@ -11,8 +11,6 @@
         android:layout_height="match_parent">
 
         <include
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/expense_details_layout"
             layout="@layout/expense_details_layout"
             />
