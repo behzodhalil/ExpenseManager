@@ -1,4 +1,4 @@
-package com.example.expensemanager.base
+package com.example.expensemanager.view.base
 
 import android.content.Context
 import android.os.Bundle

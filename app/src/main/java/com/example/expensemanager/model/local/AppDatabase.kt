@@ -1,10 +1,10 @@
-package com.example.expensemanager.local
+package com.example.expensemanager.model.local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.expensemanager.model.Expense
+import com.example.expensemanager.model.data.Expense
 
 @Database(
     entities = [Expense::class],

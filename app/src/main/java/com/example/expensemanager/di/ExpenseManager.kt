@@ -1,4 +1,4 @@
-package com.example.expensemanager
+package com.example.expensemanager.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

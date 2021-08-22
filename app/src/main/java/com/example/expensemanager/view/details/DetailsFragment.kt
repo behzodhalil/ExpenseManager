@@ -1,4 +1,4 @@
-package com.example.expensemanager
+package com.example.expensemanager.view.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.expensemanager.base.BaseFragment
-import com.example.expensemanager.base.BaseViewModel
+import com.example.expensemanager.view.base.BaseFragment
+import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentDetailsBinding
-import com.example.expensemanager.model.Expense
+import com.example.expensemanager.model.data.Expense
 import com.example.expensemanager.util.DetailState
 import com.example.expensemanager.util.cleanTextContent
 import com.example.expensemanager.util.convertToGlobal
@@ -20,7 +20,7 @@ import kotlinx.coroutines.flow.collect
 
 
 @AndroidEntryPoint
-class DetailsFragment : BaseFragment<FragmentDetailsBinding,BaseViewModel>() {
+class DetailsFragment : BaseFragment<FragmentDetailsBinding, BaseViewModel>() {
 
     private val args: DetailsFragmentArgs by navArgs()
     override val viewModel: BaseViewModel by activityViewModels()

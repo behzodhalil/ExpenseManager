@@ -6,7 +6,7 @@
     app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.expensemanager.SplashFragment"
+        android:name="com.example.expensemanager.view.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.expensemanager.MainFragment"
+        android:name="com.example.expensemanager.view.splash.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.expensemanager.DetailsFragment"
+        android:name="com.example.expensemanager.view.details.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <argument

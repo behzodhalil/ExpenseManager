@@ -1,7 +1,7 @@
-package com.example.expensemanager
+package com.example.expensemanager.di
 
 import android.app.Application
-import com.example.expensemanager.local.AppDatabase
+import com.example.expensemanager.model.local.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

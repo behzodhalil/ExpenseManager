@@ -1,11 +1,8 @@
-package com.example.expensemanager.repo
+package com.example.expensemanager.model.repo
 
-import android.os.Bundle
-import com.example.expensemanager.local.AppDatabase
-import com.example.expensemanager.model.Expense
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import com.example.expensemanager.model.local.AppDatabase
+import com.example.expensemanager.model.data.Expense
+
 
 class ExpenseRepository constructor(private val database: AppDatabase) {
 

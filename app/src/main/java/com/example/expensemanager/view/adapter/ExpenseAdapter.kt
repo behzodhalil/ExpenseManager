@@ -1,14 +1,14 @@
-package com.example.expensemanager
+package com.example.expensemanager.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.example.expensemanager.R
 import com.example.expensemanager.databinding.ExpenseItemLayoutBinding
-import com.example.expensemanager.model.Expense
+import com.example.expensemanager.model.data.Expense
 import com.example.expensemanager.util.convertToGlobal
 
 class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() {
@@ -41,13 +41,13 @@ class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() 
             when(item.type) {
                 "Income" -> {
                     itemAmount.setTextColor(
-                        ContextCompat.getColor(itemAmount.context,R.color.lime_green)
+                        ContextCompat.getColor(itemAmount.context, R.color.lime_green)
                     )
                     itemAmount.text = "+ ".plus(convertToGlobal(item.amount))
                 }
                 "Expense"-> {
                     itemAmount.setTextColor(
-                        ContextCompat.getColor(itemAmount.context,R.color.flamingo)
+                        ContextCompat.getColor(itemAmount.context, R.color.flamingo)
                     )
                     itemAmount.text = "- ".plus(convertToGlobal(item.amount))
                 }

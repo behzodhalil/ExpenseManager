@@ -1,19 +1,16 @@
-package com.example.expensemanager
+package com.example.expensemanager.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.activity.viewModels
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.expensemanager.base.BaseViewModel
+import com.example.expensemanager.R
+import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.ActivityMainBinding
-import com.example.expensemanager.local.AppDatabase
-import com.example.expensemanager.repo.ExpenseRepository
+import com.example.expensemanager.model.local.AppDatabase
+import com.example.expensemanager.model.repo.ExpenseRepository
 import com.example.expensemanager.util.viewModelFactory
 import dagger.hilt.android.AndroidEntryPoint
 

@@ -1,4 +1,4 @@
-package com.example.expensemanager
+package com.example.expensemanager.view.splash
 
 import android.os.Bundle
 import android.os.Handler
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.expensemanager.R
 
 
 class SplashFragment : Fragment() {

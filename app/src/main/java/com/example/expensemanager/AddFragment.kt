@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.expensemanager.base.BaseFragment
-import com.example.expensemanager.base.BaseViewModel
+import com.example.expensemanager.view.base.BaseFragment
+import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentAddBinding
-import com.example.expensemanager.model.Expense
+import com.example.expensemanager.model.data.Expense
 import com.example.expensemanager.util.Constants
 import com.example.expensemanager.util.modifyIntoDatePicker
 import com.example.expensemanager.util.parseDouble
@@ -18,7 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
 
 @AndroidEntryPoint
-class AddFragment : BaseFragment<FragmentAddBinding,BaseViewModel>() {
+class AddFragment : BaseFragment<FragmentAddBinding, BaseViewModel>() {
 
     override val viewModel: BaseViewModel by activityViewModels()
 

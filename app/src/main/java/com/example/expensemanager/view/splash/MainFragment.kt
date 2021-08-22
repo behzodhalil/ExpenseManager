@@ -1,4 +1,4 @@
-package com.example.expensemanager
+package com.example.expensemanager.view.splash
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,11 +11,13 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.expensemanager.base.BaseFragment
-import com.example.expensemanager.base.BaseViewModel
+import com.example.expensemanager.R
+import com.example.expensemanager.view.base.BaseFragment
+import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentMainBinding
-import com.example.expensemanager.model.Expense
+import com.example.expensemanager.model.data.Expense
 import com.example.expensemanager.util.*
+import com.example.expensemanager.view.adapter.ExpenseAdapter
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
@@ -25,7 +27,7 @@ import kotlin.math.abs
 
 
 @AndroidEntryPoint
-class MainFragment : BaseFragment<FragmentMainBinding,BaseViewModel>() {
+class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
 
 
     private lateinit var expenseAdapter: ExpenseAdapter
