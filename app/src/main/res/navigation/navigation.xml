@@ -35,7 +35,6 @@
         <argument
             android:name="expense"
             app:argType="com.example.expensemanager.model.data.Expense"
-
             />
     </fragment>
     <fragment

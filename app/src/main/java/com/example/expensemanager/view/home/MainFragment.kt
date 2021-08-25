@@ -86,6 +86,7 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
                     expense.id
                 )
                 viewModel.deleteExpense(expenseItem)
+                initializeTotalLayout()
                 Snackbar.make(
                     binding.root,
                     getString(R.string.successfully_delete),
@@ -106,6 +107,11 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
         }
     }
 
+    private fun initializeTotalLayout() = with(binding) {
+        binding.expenseTotalView.totalBalanceAmount.text = "$ 0"
+        binding.expenseTotalView.totalIncomeAmount.text = "$ 0"
+        binding.expenseTotalView.totalExpenseAmount.text = "$ 0"
+    }
 
         //function
     private fun setUpRecyclerView() = with(binding) {
