@@ -36,7 +36,7 @@ class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() 
         holder.binding.apply {
             itemText.text = item.title
             itemCategory.text = item.type
-
+            itemDate.text = item.date
 
             when(item.type) {
                 "Income" -> {
