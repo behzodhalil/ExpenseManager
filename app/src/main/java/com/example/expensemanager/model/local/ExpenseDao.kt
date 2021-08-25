@@ -16,7 +16,7 @@ interface ExpenseDao {
     @Delete
     suspend fun delete(expense: Expense)
 
-    @Query("SELECT * FROM expense_table ORDER by createdate")
+    @Query("SELECT * FROM expense_table ORDER by date")
     fun getAllExpenses(): Flow<List<Expense>>
 
     @Query("SELECT * FROM expense_table WHERE id = :id")

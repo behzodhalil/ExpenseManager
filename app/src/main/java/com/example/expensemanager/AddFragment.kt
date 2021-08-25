@@ -47,7 +47,7 @@ class AddFragment : BaseFragment<FragmentAddBinding, BaseViewModel>() {
 
             addLayout.addDate.modifyIntoDatePicker(
                 requireContext(),
-                "dd/MM/yyyy",
+                "dd/MM/E",
                  Date()
             )
             buttonSave.setOnClickListener {
