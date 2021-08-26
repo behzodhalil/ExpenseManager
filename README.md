@@ -15,6 +15,7 @@ The `Room`  persistence library provides an abstraction layer over SQLite to all
 ## Package Structure 📦
 
 com.example.expensemanager # Root Package
+
 ├── di                  # Hilt DI Modules 
     ├── data                # For data handling.
     │   ├── local           # Local Persistence Database. Room (SQLite) database
