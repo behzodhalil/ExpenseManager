@@ -11,3 +11,4 @@ A coroutine is an instance of suspendable computation. It is conceptually simila
 ### 📦 `Room`
 <br>The `Room`  persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.<br/>
 ### 🔨 `Android Architecture Components`
+<br>Android Architecture Components (AAC) is a new collection of libraries that contains the lifecycle-aware components. It can solve problems with configuration changes, supports data persistence, reduces boilerplate code, helps to prevent memory leaks and simplifies async data loading into your UI. I can’t say that it brings absolutely new approaches for solving these issues, but, finally, we have a formal, single and official direction. <br/>
