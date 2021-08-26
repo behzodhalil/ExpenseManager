@@ -4,7 +4,8 @@
 ### 💰 Expense Manager is simple, intuitive, stable and modern app that is just designed for you. Everything you need at your fingertips to manage the expenditures and budgets.
 
 ## 📄 Technologies used:
-- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
+### [Kotlin](https://kotlinlang.org/) 
+- Kotlin is a modern but already mature programming language aimed to make developers happier. It’s concise, safe, interoperable with Java and other languages, and provides many ways to reuse code between multiple platforms for productive programming.
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous and more..
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
   - [Stateflow](https://developer.android.com/kotlin/flow/stateflow-and-sharedflow) - StateFlow is a state-holder observable flow that emits the current and new state updates to its collectors. 
