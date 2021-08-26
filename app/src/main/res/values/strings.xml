@@ -51,4 +51,9 @@
     <string name="expense_manager">Expense Manager</string>
 
     <string name="recent_activities">Recent Activities</string>
+    <string name="bottom_home">Home</string>
+    <string name="bottom_statistics">Statistics</string>
+    <string name="bottom_alarm">Alarm</string>
+    <string name="bottom_add">Add</string>
+    <string name="details_title">Details</string>
 </resources>

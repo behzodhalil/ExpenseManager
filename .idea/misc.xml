@@ -3,24 +3,42 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable-v24/ic_rectangle_35.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_baseline_add.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_bottom_add.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_bottom_alarm.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_bottom_chart.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_bottom_wallet.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_cancel.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_component_1.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_component_2.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_rectangle_11.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_rectangle_18.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_rectangle_35.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_splash_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/rounded.xml" value="0.2703125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/font/poppins_medium.xml" value="0.284375" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-v21/fragment_main.xml" value="0.96875" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_add.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_details.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_main.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_add.xml" value="0.176" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_details.xml" value="0.536" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout-xxxhdpi/fragment_main.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/empty_layout.xml" value="0.264" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_add_layout.xml" value="0.4" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_details_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/example.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_add_layout.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_details_layout.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/expense_total_layout.xml" value="0.8" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_add.xml" value="0.8683274021352313" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_details.xml" value="0.928125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_add.xml" value="0.536" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_details.xml" value="0.42424242424242425" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_edit.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_main.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_splash.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/item_autocomplete_layout.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/menu/bottom_nav.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ExpenseManager/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

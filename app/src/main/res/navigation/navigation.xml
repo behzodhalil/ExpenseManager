@@ -46,13 +46,4 @@
             android:id="@+id/action_addFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/editFragment"
-        android:name="com.example.expensemanager.EditFragment"
-        android:label="fragment_edit"
-        tools:layout="@layout/fragment_edit" >
-        <action
-            android:id="@+id/action_editFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
 </navigation>
