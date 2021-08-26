@@ -8,7 +8,20 @@
     android:background="#252771"
     >
 
-
+    <TextView
+        android:id="@+id/expense_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Adding"
+        android:background="@drawable/ic_rectangle"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+       />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/add_title_layout"
         style="@style/PrimaryEditText"
