@@ -1,7 +1,7 @@
 # 💰 Expense Manager
 ![](https://github.com/behzod1996/ExpenseManager/blob/master/Expense-Manager-Mock-Up.jpg)
 
-## 💰 Expense Manager is simple, intuitive, stable and modern app that is just designed for you. Everything you need at your fingertips to manage the expenditures and budgets.
+### 💰 Expense Manager is simple, intuitive, stable and modern app that is just designed for you. Everything you need at your fingertips to manage the expenditures and budgets.
 
 ## 📄 What is Room?
 The `Room`  persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
