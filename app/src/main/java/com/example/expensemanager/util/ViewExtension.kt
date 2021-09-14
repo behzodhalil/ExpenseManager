@@ -15,15 +15,18 @@ fun View.show() {
 fun View.hide() {
     visibility = View.GONE
 }
+
 fun convertToGlobal (amount: Double): String {
     val format: NumberFormat = NumberFormat.getCurrencyInstance()
     format.maximumFractionDigits = 0
     format.currency = Currency.getInstance("USD")
     return format.format(amount)
 }
+
 fun parseDouble(value: String?): Double {
     return if (value == null || value.isEmpty()) Double.NaN else value.toDouble()
 }
+
 val String.cleanTextContent: String
     get() {
         // strips off all non-ASCII characters

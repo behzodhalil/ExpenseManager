@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expensemanager.R
 import com.example.expensemanager.databinding.ExpenseItemLayoutBinding
-import com.example.expensemanager.model.data.Expense
+import com.example.expensemanager.data.model.Expense
 import com.example.expensemanager.util.convertToGlobal
 
 class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() {

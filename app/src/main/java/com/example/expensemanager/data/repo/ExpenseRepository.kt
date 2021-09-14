@@ -1,7 +1,7 @@
-package com.example.expensemanager.model.repo
+package com.example.expensemanager.data.repo
 
-import com.example.expensemanager.model.local.AppDatabase
-import com.example.expensemanager.model.data.Expense
+import com.example.expensemanager.data.local.AppDatabase
+import com.example.expensemanager.data.model.Expense
 
 
 class ExpenseRepository constructor(private val database: AppDatabase) {

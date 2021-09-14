@@ -11,7 +11,7 @@ import androidx.navigation.fragment.navArgs
 import com.example.expensemanager.view.base.BaseFragment
 import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentDetailsBinding
-import com.example.expensemanager.model.data.Expense
+import com.example.expensemanager.data.model.Expense
 import com.example.expensemanager.util.DetailState
 import com.example.expensemanager.util.cleanTextContent
 import com.example.expensemanager.util.convertToGlobal
@@ -28,8 +28,7 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding, BaseViewModel>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val expense = args.expense
-        val id = expense.id
-        getById(id)
+        getById(expense.id)
         observeItems()
     }
 

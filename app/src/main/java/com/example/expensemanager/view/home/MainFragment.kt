@@ -15,7 +15,7 @@ import com.example.expensemanager.R
 import com.example.expensemanager.view.base.BaseFragment
 import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentMainBinding
-import com.example.expensemanager.model.data.Expense
+import com.example.expensemanager.data.model.Expense
 import com.example.expensemanager.util.*
 import com.example.expensemanager.view.adapter.ExpenseAdapter
 import com.google.android.material.snackbar.Snackbar
@@ -117,7 +117,6 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
     private fun setUpRecyclerView() = with(binding) {
         expenseAdapter = ExpenseAdapter()
         val recyclerView = binding.controlRecyclerView
-
         recyclerView.adapter = expenseAdapter
         recyclerView.layoutManager = LinearLayoutManager(activity)
     }

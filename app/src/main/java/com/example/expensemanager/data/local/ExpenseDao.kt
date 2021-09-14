@@ -1,7 +1,7 @@
-package com.example.expensemanager.model.local
+package com.example.expensemanager.data.local
 
 import androidx.room.*
-import com.example.expensemanager.model.data.Expense
+import com.example.expensemanager.data.model.Expense
 import kotlinx.coroutines.flow.Flow
 
 @Dao

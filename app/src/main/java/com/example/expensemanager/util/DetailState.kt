@@ -1,6 +1,6 @@
 package com.example.expensemanager.util
 
-import com.example.expensemanager.model.data.Expense
+import com.example.expensemanager.data.model.Expense
 
 sealed class DetailState {
     object Loading : DetailState()

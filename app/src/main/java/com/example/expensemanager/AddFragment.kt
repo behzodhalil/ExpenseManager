@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.expensemanager.view.base.BaseFragment
 import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.FragmentAddBinding
-import com.example.expensemanager.model.data.Expense
+import com.example.expensemanager.data.model.Expense
 import com.example.expensemanager.util.Constants
 import com.example.expensemanager.util.modifyIntoDatePicker
 import com.example.expensemanager.util.parseDouble

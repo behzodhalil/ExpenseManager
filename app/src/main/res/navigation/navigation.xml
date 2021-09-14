@@ -34,7 +34,7 @@
         tools:layout="@layout/fragment_details" >
         <argument
             android:name="expense"
-            app:argType="com.example.expensemanager.model.data.Expense"
+            app:argType="com.example.expensemanager.data.model.Expense"
             />
     </fragment>
     <fragment

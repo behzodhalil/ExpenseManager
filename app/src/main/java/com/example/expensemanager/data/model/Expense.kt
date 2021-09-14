@@ -1,4 +1,4 @@
-package com.example.expensemanager.model.data
+package com.example.expensemanager.data.model
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
@@ -12,31 +12,18 @@ import java.text.DateFormat
 @Parcelize
 data class Expense(
 
-
-    @ColumnInfo(name="title")
-    var title: String,
-
-    @ColumnInfo(name="amount")
-    var amount:Double,
-
-    @ColumnInfo(name="type")
-    var type: String,
-
-    @ColumnInfo(name="tag")
-    var tag: String,
-
-    @ColumnInfo(name="date")
-    var date: String,
-
-    @ColumnInfo(name="note")
-    var note: String,
-
-    @ColumnInfo(name="createdate")
-    var createdate: Long = System.currentTimeMillis(),
+    @ColumnInfo(name="title") var title: String,
+    @ColumnInfo(name="amount") var amount:Double,
+    @ColumnInfo(name="type") var type: String,
+    @ColumnInfo(name="tag") var tag: String,
+    @ColumnInfo(name="date") var date: String,
+    @ColumnInfo(name="note") var note: String,
+    @ColumnInfo(name="createdate") var createdate: Long = System.currentTimeMillis(),
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name="id")
     var id: Int = 0
+
 ): Parcelable {
     val createdAtDateFormat: String
         get() = DateFormat.getDateTimeInstance()

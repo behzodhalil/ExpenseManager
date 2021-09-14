@@ -4,8 +4,8 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 
 import androidx.lifecycle.viewModelScope
-import com.example.expensemanager.model.data.Expense
-import com.example.expensemanager.model.repo.ExpenseRepository
+import com.example.expensemanager.data.model.Expense
+import com.example.expensemanager.data.repo.ExpenseRepository
 import com.example.expensemanager.util.DetailState
 import com.example.expensemanager.util.ViewState
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -57,6 +57,7 @@ class BaseViewModel @Inject constructor
         }
     }
     init {
+        //Does not block a main thread, dispatches on background thread
         viewModelScope.launch {
             repo.getAllItem().collect { result ->
                 if(result.isNullOrEmpty()) {
