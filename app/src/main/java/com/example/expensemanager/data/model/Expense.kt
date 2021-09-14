@@ -18,10 +18,8 @@ data class Expense(
     @ColumnInfo(name="tag") var tag: String,
     @ColumnInfo(name="date") var date: String,
     @ColumnInfo(name="note") var note: String,
-    @ColumnInfo(name="createdate") var createdate: Long = System.currentTimeMillis(),
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name="id")
-    var id: Int = 0
+    @ColumnInfo(name="create_date") var createdate: Long = System.currentTimeMillis(),
+    @PrimaryKey(autoGenerate = true) @ColumnInfo(name="id") var id: Int = 0
 
 ): Parcelable {
     val createdAtDateFormat: String
