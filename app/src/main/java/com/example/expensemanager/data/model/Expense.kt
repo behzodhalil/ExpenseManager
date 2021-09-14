@@ -19,7 +19,6 @@ data class Expense(
     @ColumnInfo(name="date") var date: String,
     @ColumnInfo(name="note") var note: String,
     @ColumnInfo(name="createdate") var createdate: Long = System.currentTimeMillis(),
-
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name="id")
     var id: Int = 0
