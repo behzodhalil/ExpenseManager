@@ -15,15 +15,16 @@ class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() 
 
     inner class ExpenseViewHolder(val binding: ExpenseItemLayoutBinding) : RecyclerView.ViewHolder(binding.root)
 
+    companion object {
+        private val differCallBack = object : DiffUtil.ItemCallback<Expense>() {
 
-    private val differCallBack = object : DiffUtil.ItemCallback<Expense>(){
+            override fun areContentsTheSame(oldItem: Expense, newItem: Expense): Boolean {
+                return oldItem.id == newItem.id
+            }
 
-        override fun areContentsTheSame(oldItem: Expense, newItem: Expense): Boolean {
-            return oldItem.id == newItem.id
-        }
-
-        override fun areItemsTheSame(oldItem: Expense, newItem: Expense): Boolean {
-            return oldItem == newItem
+            override fun areItemsTheSame(oldItem: Expense, newItem: Expense): Boolean {
+                return oldItem == newItem
+            }
         }
     }
 

@@ -72,6 +72,7 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+
                 // get item position & delete notes
                 val position = viewHolder.adapterPosition
                 val expense = expenseAdapter.differ.currentList[position]
@@ -113,7 +114,6 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
         binding.expenseTotalView.totalExpenseAmount.text = "$ 0"
     }
 
-        //function
     private fun setUpRecyclerView() = with(binding) {
         expenseAdapter = ExpenseAdapter()
         val recyclerView = binding.controlRecyclerView
@@ -121,7 +121,6 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
         recyclerView.layoutManager = LinearLayoutManager(activity)
     }
 
-    // function
     private fun onTotalExpenseLoading(expense: List<Expense>) = with(binding) {
         val (totalIncome, totalExpense) = expense.partition { it.type == "Income" }
         val income = totalIncome.sumOf { it.amount }
@@ -131,10 +130,6 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
         expenseTotalView.totalBalanceAmount.text = convertToGlobal(income-expense)
 
     }
-
-
-
-    //function
 
     private fun observeExpense() = lifecycleScope.launchWhenCreated {
         viewModel.viewState.collect { viewState ->
@@ -168,7 +163,6 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
         emptyLayout.show()
     }
 
-    //function
     private fun onExpenseLoaded(list: List<Expense>)  = expenseAdapter.differ.submitList(list)
 
     //function
