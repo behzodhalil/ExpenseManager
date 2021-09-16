@@ -21,8 +21,4 @@ data class Expense(
     @ColumnInfo(name="create_date") var createdate: Long = System.currentTimeMillis(),
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name="id") var id: Int = 0
 
-): Parcelable {
-    val createdAtDateFormat: String
-        get() = DateFormat.getDateTimeInstance()
-            .format(createdate)
-}
+): Parcelable

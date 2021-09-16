@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityMainBinding
 
     private val repo by lazy { ExpenseRepository(AppDatabase(this)) }
     private val viewModel: BaseViewModel by viewModels {
@@ -27,8 +28,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         viewModel
         initViews()
 
