@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#252771"
-    >
+    android:background="#252771" >
 
          <androidx.constraintlayout.widget.ConstraintLayout
              android:id="@+id/expense_details_constraint"

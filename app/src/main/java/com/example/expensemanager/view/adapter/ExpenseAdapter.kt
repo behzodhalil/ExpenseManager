@@ -48,7 +48,7 @@ class ExpenseAdapter : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() 
                 }
                 "Expense"-> {
                     itemAmount.setTextColor(
-                        ContextCompat.getColor(itemAmount.context, R.color.flamingo)
+                        ContextCompat.getColor(itemAmount.context, R.color.lime_green)
                     )
                     itemAmount.text = "- ".plus(convertToGlobal(item.amount))
                 }

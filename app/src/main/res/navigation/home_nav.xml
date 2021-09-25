@@ -2,19 +2,13 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
-    app:startDestination="@id/splashFragment">
+    android:id="@+id/home_nav"
+    app:startDestination="@id/mainFragment">
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.example.expensemanager.view.splash.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
-        <action
-            android:id="@+id/action_splashFragment_to_mainFragment"
-            app:destination="@id/mainFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        android:id="@+id/statsFragment"
+        android:name="com.example.expensemanager.view.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.expensemanager.view.home.MainFragment"
@@ -46,4 +40,5 @@
             android:id="@+id/action_addFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+
 </navigation>

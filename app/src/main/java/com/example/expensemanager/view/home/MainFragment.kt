@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.get
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
@@ -41,11 +42,11 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setUpRecyclerView()
-        initializeView()
         observeExpense()
         onClickExpense()
         swipeToDelete()
     }
+
 
     private fun onClickExpense() {
         expenseAdapter.setOnClickListener {
@@ -58,6 +59,7 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
     }
 
     private fun swipeToDelete() {
+
         // init item touch callback for swipe action
         val itemTouchHelperCallback = object : ItemTouchHelper.SimpleCallback(
             ItemTouchHelper.UP or ItemTouchHelper.DOWN,
@@ -83,7 +85,7 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
                     expense.tag,
                     expense.date,
                     expense.note,
-                    expense.createdate,
+                    expense.createDate,
                     expense.id
                 )
                 viewModel.deleteExpense(expenseItem)
@@ -164,25 +166,5 @@ class MainFragment : BaseFragment<FragmentMainBinding, BaseViewModel>() {
     }
 
     private fun onExpenseLoaded(list: List<Expense>)  = expenseAdapter.differ.submitList(list)
-
-    //function
-    private fun initializeView() = with(binding) {
-        btnAdd.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_addFragment)
-        }
-        mainDashboardScrollView.setOnScrollChangeListener(
-            NestedScrollView.OnScrollChangeListener { _, sX, sY, oX, oY ->
-                if (abs(sY - oY) > 10) {
-                    when {
-                        sY > oY -> btnAdd.hide()
-                        oY > sY -> btnAdd.show()
-                    }
-                }
-            }
-        )
-
-    }
-
-
 
 }

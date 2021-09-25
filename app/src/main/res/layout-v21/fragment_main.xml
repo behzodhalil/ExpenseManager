@@ -20,37 +20,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/expense_manager_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/expense_manager"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="110dp"
-                />
             <include
                 android:id="@+id/expense_total_view"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
                 layout="@layout/expense_total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
                 android:layout_marginLeft="@dimen/dimen_16"
-                android:layout_marginRight="@dimen/dimen_16"
-                android:layout_marginTop="45dp"
-                />
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/dimen_16" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/recent_activities"
-                android:layout_marginTop="150dp"
-                android:fontFamily="@font/poppins_medium"
-                android:textSize="20sp"
-                android:textColor="@color/white"
                 android:layout_marginStart="16dp"
-                />
+                android:layout_marginTop="145dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="@dimen/dimen_4"
+                android:paddingTop="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_4"
+                android:text="@string/recent_activities"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/control_recycler_view"
@@ -61,9 +51,11 @@
                 android:visibility="visible"
                 tools:listitem="@layout/expense_item_layout" />
 
+
         </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
+
     <ViewStub
         android:id="@+id/empty_layout"
         android:layout_width="wrap_content"
@@ -76,17 +68,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/dimen_36"
-        android:backgroundTint="#00B4FF"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_baseline_add"
-        app:borderWidth="0dp"
-        app:tint="@color/white"
-        tools:ignore="UnusedAttribute,ImageContrastCheck" />
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

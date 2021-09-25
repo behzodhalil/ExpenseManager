@@ -4,4 +4,6 @@ import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class ExpenseManager : Application()
+class ExpenseManager: Application() {
+
+}

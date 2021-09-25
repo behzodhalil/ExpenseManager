@@ -6,13 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
+
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+        android:id="@+id/nav_host"
         class="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/navigation" />
+        app:navGraph="@navigation/home_nav" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="#252771"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        android:paddingEnd="@dimen/dimen_12"
+        android:paddingTop="12dp"
+        android:paddingStart="@dimen/dimen_12"
+
+        />
+
 
     
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

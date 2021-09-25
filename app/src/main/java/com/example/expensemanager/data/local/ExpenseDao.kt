@@ -4,6 +4,11 @@ import androidx.room.*
 import com.example.expensemanager.data.model.Expense
 import kotlinx.coroutines.flow.Flow
 
+/*
+* Provides access to read/write operations on the expense table.
+* Used by the view model to format query, insert, delete results for use in the UI.
+*/
+
 @Dao
 interface ExpenseDao {
 

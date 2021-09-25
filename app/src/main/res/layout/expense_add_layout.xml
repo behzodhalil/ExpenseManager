@@ -5,8 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#252771"
-    >
+    android:background="#252771" >
 
     <TextView
         android:id="@+id/expense_details_title"
@@ -14,8 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Adding"
-        android:background="@drawable/ic_rectangle"
+        android:text="@string/adding_button"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:paddingLeft="4dp"
@@ -65,9 +63,7 @@
         android:layout_height="wrap_content"
         style="@style/DropDown"
         android:layout_margin="@dimen/dimen_16"
-        android:hint="@string/add_type_text"
-        >
-
+        android:hint="@string/add_type_text" >
         <AutoCompleteTextView
             android:id="@+id/add_type"
             android:layout_width="match_parent"
@@ -76,9 +72,7 @@
             android:inputType="none"
             android:labelFor="@id/add_type_layout"
             tools:ignore="LabelFor,SpeakableTextPresentCheck" />
-
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/add_tag_layout"

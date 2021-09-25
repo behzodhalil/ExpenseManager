@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="120dp"
     app:cardCornerRadius="@dimen/dimen_16"
     android:layout_margin="@dimen/dimen_12"
     app:cardBackgroundColor="#867AE9"
@@ -14,9 +14,8 @@
 
         <ImageView
             android:layout_width="@dimen/dimen_32"
-            android:layout_height="15dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/ic_wallet"
             app:layout_constraintStart_toStartOf="parent"
@@ -24,11 +23,10 @@
 
         <ImageView
             android:id="@+id/icon_up"
-            android:layout_width="@dimen/dimen_16"
-            android:layout_height="15dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_marginStart="200dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="18dp"
             android:src="@drawable/ic_up_arrow"
             app:layout_constraintBottom_toTopOf="@id/icon_down"
             app:layout_constraintRight_toLeftOf="@id/total_income"
@@ -38,11 +36,10 @@
 
         <ImageView
             android:id="@+id/icon_down"
-            android:layout_width="@dimen/dimen_16"
-            android:layout_height="15dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_marginStart="200dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="75dp"
             android:src="@drawable/ic_down_arrow"
             app:layout_constraintRight_toLeftOf="@id/total_expense"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -54,11 +51,11 @@
             android:id="@+id/total_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
+            android:layout_marginStart="@dimen/dimen_36"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_balance_text"
             android:textColor="@color/white"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.049"
@@ -71,10 +68,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
-            android:layout_marginLeft="36dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_balance_amount"
-            android:textSize="@dimen/dimen_28"
+            android:textSize="32sp"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -102,19 +98,19 @@
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_income"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.685"
+            app:layout_constraintHorizontal_bias="0.720"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.197" />
+            app:layout_constraintVertical_bias="0.206" />
 
         <TextView
             android:id="@+id/total_income_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="282dp"
+            android:layout_marginStart="300dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_income_amount"
             android:textColor="@color/white"
@@ -124,7 +120,7 @@
             app:layout_constraintStart_toEndOf="@id/total_income"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.159" />
+            app:layout_constraintVertical_bias="0.179" />
 
         <TextView
             android:id="@+id/total_expense"
@@ -133,19 +129,19 @@
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_expense"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.693"
+            app:layout_constraintHorizontal_bias="0.730"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.753" />
+            app:layout_constraintVertical_bias="0.78" />
 
         <TextView
             android:id="@+id/total_expense_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="286dp"
+            android:layout_marginStart="300dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/total_expense_amount"
             android:textColor="@color/white"
@@ -155,7 +151,7 @@
             app:layout_constraintStart_toEndOf="@id/total_income"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.768" />
+            app:layout_constraintVertical_bias="0.78" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

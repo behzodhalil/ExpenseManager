@@ -2,10 +2,16 @@ package com.example.expensemanager.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.activity.viewModels
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.expensemanager.R
 import com.example.expensemanager.view.base.BaseViewModel
 import com.example.expensemanager.databinding.ActivityMainBinding
@@ -13,13 +19,18 @@ import com.example.expensemanager.data.local.AppDatabase
 import com.example.expensemanager.data.repo.ExpenseRepository
 import com.example.expensemanager.util.viewModelFactory
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
+
+
 
     private val repo by lazy { ExpenseRepository(AppDatabase(this)) }
     private val viewModel: BaseViewModel by viewModels {
@@ -34,22 +45,26 @@ class MainActivity : AppCompatActivity() {
         viewModel
         initViews()
 
+
     }
 
     private fun initViews() {
 
         navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment?
+            .findFragmentById(R.id.nav_host) as NavHostFragment?
             ?: return
 
-        with(navHostFragment.navController) {
-            appBarConfiguration = AppBarConfiguration(graph)
-            setupActionBarWithNavController(this, appBarConfiguration)
-        }
+        val navController = navHostFragment.navController
+        NavigationUI.setupWithNavController(binding.bottomNav,navHostFragment.navController)
+
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.bottom_nav_menu, menu)
+        return true
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        navHostFragment.navController.navigateUp()
-        return super.onSupportNavigateUp()
-    }
+
+
+
+
 }

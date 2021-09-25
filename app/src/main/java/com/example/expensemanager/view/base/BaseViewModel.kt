@@ -16,12 +16,10 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class BaseViewModel @Inject constructor
-    (
+class BaseViewModel @Inject  constructor(
     application: Application,
     private val repo: ExpenseRepository
-    ) : AndroidViewModel(application)
-
+) : AndroidViewModel(application)
 {
     private val _viewState = MutableStateFlow<ViewState>(ViewState.Loading)
     private val _detailState = MutableStateFlow<DetailState>(DetailState.Loading)
@@ -35,16 +33,9 @@ class BaseViewModel @Inject constructor
         repo.insert(expense)
     }
 
-    fun updateExpense(expense: Expense) = viewModelScope.launch {
-        repo.update(expense)
-    }
 
     fun deleteExpense(expense: Expense) = viewModelScope.launch {
         repo.delete(expense)
-    }
-
-    fun deleteById(id: Int) = viewModelScope.launch {
-        repo.deleteById(id)
     }
 
 
