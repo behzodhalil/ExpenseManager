@@ -5,6 +5,9 @@ import com.example.expensemanager.data.local.AppDatabase
 import com.example.expensemanager.data.model.Expense
 import javax.inject.Inject
 
+/**
+ ### `Singleton repository for storing data in database`
+ */
 
 class ExpenseRepository @Inject constructor(private val database: AppDatabase) {
 

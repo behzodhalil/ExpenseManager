@@ -21,13 +21,13 @@ interface ExpenseDao {
     @Delete
     suspend fun delete(expense: Expense)
 
-    @Query("SELECT * FROM expense_table ORDER by create_date")
+    @Query("SELECT * FROM ${Expense.TABLE_NAME} ORDER by create_date")
     fun getAllExpenses(): Flow<List<Expense>>
 
-    @Query("SELECT * FROM expense_table WHERE id = :id")
+    @Query("SELECT * FROM ${Expense.TABLE_NAME} WHERE id = :id")
     fun getById(id:Int): Flow<Expense>
 
-    @Query("DELETE FROM expense_table WHERE id = :id")
+    @Query("DELETE FROM ${Expense.TABLE_NAME} WHERE id = :id")
     suspend fun deleteById(id: Int)
 
 }

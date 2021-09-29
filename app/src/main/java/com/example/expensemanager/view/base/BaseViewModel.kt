@@ -15,6 +15,10 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/**
+ ### `Common class for using viewModel classes`
+ */
+
 @HiltViewModel
 class BaseViewModel @Inject  constructor(
     application: Application,

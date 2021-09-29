@@ -4,15 +4,15 @@ import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.expensemanager.data.model.Expense.Companion.TABLE_NAME
 import kotlinx.parcelize.Parcelize
 
 
-/*
-* Represents a single table in the database.
-* Each property of Expense data class corresponds to a column.
+/**
+### `Represents a single table in the database.`
 */
 
-@Entity(tableName = "expense_table")
+@Entity(tableName = TABLE_NAME)
 @Parcelize
 data class Expense(
 
@@ -27,4 +27,8 @@ data class Expense(
     // @PrimaryKey used to identify unique identifier for each row
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") var id: Int = 0
 
-):Parcelable
+):Parcelable {
+    companion object {
+        const val TABLE_NAME = "expense_table"
+    }
+}
